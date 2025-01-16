@@ -22,7 +22,23 @@
     + use the right type of layout for the right type of content
     + clear you basics till tomorrow
     + try to self code so that the error or updates can be fixed easily.
-    
+
+    <div class="header-upper-info">
+                        <div class="directory-button"></div>
+                        <div class="email-button"></div>
+                        <div class="login-register-button"></div>
+                        <div class="search-in-page-button"></div>
+                    </div>
+
+                    .directory-button,
+.email-button,
+.login-register-button,
+.search-in-page-button {
+    height: 50px;
+    width: 150px;
+    margin: 2px;
+    background-color: blue;
+}
 -->
 
 <!DOCTYPE html>
@@ -32,7 +48,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title></title>
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -40,13 +60,49 @@
 
         <header class="header">
             <div class="header-items">
-                <div>
-                    <div class="LOGO">
-                        LOGO
-                    </div>
+                <div class="header-logo">
 
-                    <div class>NAV</div>
                 </div>
+
+                <div class="header-info-part">
+                    <div class="info-part-container">
+                        <div class="upper-header">
+                            <div class="upper-header-container">
+                                <div class="directory-button">
+                                    <a href="#">
+                                        <p>Directory</p>
+                                    </a>
+                                </div>
+                                <div class="email-button">
+                                    <a href="#">
+                                        <p>Email Us</p>
+                                    </a>
+                                </div>
+                                <div class="login-register-button">
+                                    <a href="#">
+                                        <p>Login-Register</p>
+                                    </a>
+                                </div>
+                                <div class="search-in-page-button">
+                                    <a href="#" class="search-with-svg">
+
+                                        <div class="search-text">
+                                            <p>Search</p>
+                                        </div>
+                                        <div class="search-svg">
+                                            <img src="./assets/vectors/magnifying-glass-solid.svg"
+                                                class="search-svg-img" width="35%">
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-header"></div>
+                    </div>
+                </div>
+
+
             </div>
         </header>
 
@@ -108,3 +164,8 @@
         </main>
 
         <footer class="footer">Footer</footer>
+
+    </div>
+</body>
+
+</html>

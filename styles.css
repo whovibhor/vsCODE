@@ -2,23 +2,123 @@
     margin: 0px;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .full-body {
     height: 4500px;
     background-color: gray;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     background-color: white;
     height: 3%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .header-items {
+    /* remove this*/
     background-color: rgb(168, 24, 24);
+    width: 100%;
+    margin: 1px;
+    display: flex;
+}
+
+.header-logo {
+    /* remove this*/
+    background-color: black;
+    width: 18%;
+    margin: 1px;
+}
+
+
+.header-info-part {
+    /* remove this*/
+    background-color: black;
+    width: 82%;
+    margin: 1px;
+}
+
+.info-part-container {
+    background-color: wheat;
+    height: 100%;
+    margin: .5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-header {
+    background-color: aqua;
+    height: 40%;
+    margin: 1px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.upper-header-container {
+    background-color: black;
+    width: 50%;
+    margin-right: 7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.directory-button,
+.email-button,
+.login-register-button,
+.search-in-page-button {
+    height: 55%;
+    width: 23%;
+    margin: 2px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-with-svg {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: brown;
     height: 90%;
-    width: 99%;
+    margin: 2px;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.search-with-svg:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.search-text {
+    margin-left: 28px;
+}
+
+.search-svg {
+    display: flex;
+}
+
+
+
+.upper-header-container p {
+    display: inline-block;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.lower-header {
+    background-color: aqua;
+    height: 60%;
+    margin: 1px;
 }
 
 .main-content {
